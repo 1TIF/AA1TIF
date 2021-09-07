@@ -1,0 +1,93 @@
+body
+{
+	background-color: #2B2B2B;
+	font-family: 'Lato', sans-serif;
+	color: #318DAD;
+}
+
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	
+}
+
+#topbar
+{
+	width: 100%;
+	background-color: #4F4F4F;
+	color: #00D6D6;
+}
+
+#imie
+{
+	padding: 1%;
+	padding-bottom: 0.5px;
+	width: 46%;
+	letter-spacing: 2px;
+	font-size: 19px;
+	display: inline-block;
+	text-align: center;
+}
+
+#klas
+{
+	padding: 1%;
+	padding-bottom: 0.5px;
+	display: inline-block;
+	width: 45%;
+	letter-spacing: 2px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#zegar
+{
+	padding: 0.5%;
+	width: 100%;
+	letter-spacing: 2px;
+	font-size: 19px;
+	display: inline-block;
+	text-align: center;
+}
+
+#temat
+{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	width: 100%;
+	background-color: #4F4F4F;
+	color: #00D6D6;
+	font-size: 19px;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px dashed #00D6D6;
+}
+
+#tresc
+{
+	
+	background-color: #4F4F4F;
+	color: #00D6D6;
+	font-size: 17px;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-align: justify;
+	padding: 2%;
+}
+
+#footer
+{
+	margin-top: 4%;
+	width: 100%;
+	background-color: #4F4F4F;
+	color: #00D6D6;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 0.5%;
+	display: inline-block;
+	text-align: center;
+}
+

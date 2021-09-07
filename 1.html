@@ -1,0 +1,87 @@
+<!DOCKTYPE HTML>
+<html lang="pl"> 
+<head>
+	<meta charset="utf-8" />
+	<title>Zeszyt Alana Abramowskiego z 1 TIF</title>
+	<meta name="description" content="zeszyt na przedmiot pt. Systemy Operacyjne"/>
+	<meta name="keywords" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="przekierowanie.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	
+	<script type="text/javascript">
+	function odliczanie()
+	{	
+		var dzisiaj = new Date();
+		
+		var dzien = dzisiaj.getDate();
+		var miesiac = dzisiaj.getMonth()+1;
+		var rok = dzisiaj.getFullYear();
+		
+		var godzina = dzisiaj.getHours();
+		if(godzina<10) godzina = "0"+godzina;
+		var minuta = dzisiaj.getMinutes();
+		if(minuta<10) minuta = "0"+minuta;
+		var sekunda = dzisiaj.getSeconds();
+		if(sekunda<10) sekunda = "0"+sekunda;
+		
+		document.getElementById("zegar").innerHTML = dzien+" / "+miesiac+"  / "+rok+"  |  "+godzina+":"+minuta+":"+sekunda;
+		
+		setTimeout("odliczanie()",1000);
+	}
+	</script>
+</head>
+
+<body onload="odliczanie();">
+	
+	<div id="container">
+		
+		<header>
+			
+			<div id="topbar">
+			
+				<div id="imie">
+					<h1> Alan Abramowski </h1>
+				</div>
+				
+				<div id="klas">
+					<h1> Klasa 1 TIF </h1>
+				</div>
+				
+				<div id="zegar"></div>
+			
+			</div>
+			
+		</header>
+		
+		<header>
+			<div id ="temat">
+					
+				<h3> Lekcja 1. </br> Temat: Przedmiotowy system oceniania. </h3>
+
+			</div>
+		</header>
+		
+		<div id="tresc">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel vehicula sem, a euismod quam. Nullam quis iaculis turpis, ac bibendum elit. Mauris sem dolor, faucibus id ex ut, facilisis pretium odio. Quisque venenatis libero non egestas interdum. Sed dui dui, egestas at tristique vel, interdum consectetur risus. Fusce euismod ut leo accumsan mattis. Fusce ultricies eget sapien quis pellentesque. Mauris augue turpis, ullamcorper non nibh at, fringilla tempus odio. Mauris lacinia, massa egestas ultricies cursus, odio massa tristique purus, nec volutpat urna eros sed ex. Fusce dignissim mauris nunc, vitae eleifend libero dignissim eget.
+
+			Proin lacinia urna urna, et ultricies nunc iaculis et. Aenean at nunc eget metus mattis faucibus. Proin laoreet enim sed hendrerit cursus. Quisque a est vitae diam lacinia imperdiet 	ac sit amet lorem. Nullam dapibus hendrerit nulla varius pretium. Nam lectus leo, molestie a diam in, eleifend mattis risus. Aenean quis semper orci. In gravida nunc metus, vitae ultrices enim luctus non. Aliquam consectetur efficitur porttitor. Donec ligula mi, scelerisque id ultricies in, ultricies vitae sem. Integer facilisis massa imperdiet, ornare nibh at, iaculis libero.
+
+			Suspendisse id vulputate mi, vel tincidunt neque. Nam accumsan lorem vel ipsum auctor euismod. Ut pharetra odio sit amet rutrum consequat. Nunc blandit vel erat non accumsan. Mauris ornare mattis eleifend. Vivamus placerat ligula at velit vestibulum, non pharetra neque consectetur. Sed eu aliquam urna.
+		</div>
+		
+		<footer>
+			
+			<div id="footer">
+				Strona napisana przez Alana Abramowskiego, w razie błędów proszę o kontakt.
+			</div>
+			
+		</footer>
+		
+	</div>
+	
+</body>
+
+</html>

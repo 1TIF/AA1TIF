@@ -76,6 +76,7 @@ body
 	display: inline-block;
 	text-align: justify;
 	padding: 2%;
+	width: 100%;
 }
 
 #footer

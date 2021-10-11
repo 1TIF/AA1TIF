@@ -1,0 +1,92 @@
+<!DOCKTYPE HTML>
+<html lang="pl"> 
+<head>
+	<meta charset="utf-8" />
+	<title>Zeszyt Alana Abramowskiego z 1 TIF</title>
+	<meta name="description" content="zeszyt na przedmiot pt. Systemy Operacyjne"/>
+	<meta name="keywords" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="przekierowanie.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	
+	<script type="text/javascript">
+	function odliczanie()
+	{	
+		var dzisiaj = new Date();
+		
+		var dzien = dzisiaj.getDate();
+		var miesiac = dzisiaj.getMonth()+1;
+		var rok = dzisiaj.getFullYear();
+		
+		var godzina = dzisiaj.getHours();
+		if(godzina<10) godzina = "0"+godzina;
+		var minuta = dzisiaj.getMinutes();
+		if(minuta<10) minuta = "0"+minuta;
+		var sekunda = dzisiaj.getSeconds();
+		if(sekunda<10) sekunda = "0"+sekunda;
+		
+		document.getElementById("zegar").innerHTML = dzien+" / "+miesiac+"  / "+rok+"  |  "+godzina+":"+minuta+":"+sekunda;
+		
+		setTimeout("odliczanie()",1000);
+	}
+	</script>
+</head>
+
+<body onload="odliczanie();">
+	
+	<div id="container">
+		
+		<header>
+			
+			<div id="topbar">
+			
+				<div id="imie">
+					<h1> Alan Abramowski </h1>
+				</div>
+				
+				<div id="klas">
+					<h1> Klasa 1 TIF </h1>
+				</div>
+				
+				<div id="zegar"></div>
+			
+			</div>
+			
+		</header>
+		
+		<header>
+			<div id ="temat">
+					
+				<h3> Systemy operacyjne: unix </h3>
+
+			</div>
+		</header>
+		
+		<div id="tresc">
+			
+		  Unix Time-Sharing System – system operacyjny rozwijany od 1969 r. w Bell Labs (UNIX System Laboratories, USL) przez Dennisa Ritchie i Kena Thompsona. W latach 70. i 80. zdobył bardzo dużą popularność, co zaowocowało powstaniem wielu odmian i implementacji. Część z nich, w szczególności GNU/Linux oraz macOS, jest w użyciu do dziś. UNIX jest zarejestrowanym znakiem towarowym The Open Group.
+
+      Unix miał duży wkład w rozwój systemów operacyjnych, wprowadzając wiele koncepcji będących w powszechnym użyciu do dziś. Do najbardziej znaczących należy upowszechnienie hierarchicznego systemu plików oraz reprezentacji niemal wszystkich składników systemu jako plików (również urządzeń peryferyjnych). Twórcy systemu zastosowali podczas jego tworzenia wiele nowatorskich rozwiązań oraz założeń projektowych. Narzędzia systemowe zostały zaprojektowane zgodnie z regułą KISS mówiącą, że programy powinny być proste i realizować dobrze jedną rzecz.
+      Unix wywarł duży wpływ na dzisiejszą informatykę, tak bezpośredni, jak i pośredni. To jemu zawdzięczają swoją popularność język C i reguła KISS.
+
+    Współcześnie Unix stał się synonimem całej rodziny systemów wywodzących się od pierwotnego pnia lub klonów zgodnych z zestandaryzowanymi normami POSIX lub Single UNIX Specification. W obrębie systemów UNIX wywodzących się z oryginalnego kodu AT&T wyróżnia się pochodne: Systemu V lub BSD. Współcześnie ze względu na liczne wzajemne powiązania i zapożyczenia taki podział stracił na aktualności.
+      
+			<img src="2linux.png">
+			
+		</div>
+		
+		<footer>
+			
+			<div id="footer">
+				Strona napisana przez Alana Abramowskiego, w razie błędów proszę o kontakt.
+			</div>
+			
+		</footer>
+		
+	</div>
+	
+</body>
+
+</html>

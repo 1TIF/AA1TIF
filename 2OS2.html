@@ -1,0 +1,92 @@
+<!DOCKTYPE HTML>
+<html lang="pl"> 
+<head>
+	<meta charset="utf-8" />
+	<title>Zeszyt Alana Abramowskiego z 1 TIF</title>
+	<meta name="description" content="zeszyt na przedmiot pt. Systemy Operacyjne"/>
+	<meta name="keywords" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="przekierowanie.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	
+	<script type="text/javascript">
+	function odliczanie()
+	{	
+		var dzisiaj = new Date();
+		
+		var dzien = dzisiaj.getDate();
+		var miesiac = dzisiaj.getMonth()+1;
+		var rok = dzisiaj.getFullYear();
+		
+		var godzina = dzisiaj.getHours();
+		if(godzina<10) godzina = "0"+godzina;
+		var minuta = dzisiaj.getMinutes();
+		if(minuta<10) minuta = "0"+minuta;
+		var sekunda = dzisiaj.getSeconds();
+		if(sekunda<10) sekunda = "0"+sekunda;
+		
+		document.getElementById("zegar").innerHTML = dzien+" / "+miesiac+"  / "+rok+"  |  "+godzina+":"+minuta+":"+sekunda;
+		
+		setTimeout("odliczanie()",1000);
+	}
+	</script>
+</head>
+
+<body onload="odliczanie();">
+	
+	<div id="container">
+		
+		<header>
+			
+			<div id="topbar">
+			
+				<div id="imie">
+					<h1> Alan Abramowski </h1>
+				</div>
+				
+				<div id="klas">
+					<h1> Klasa 1 TIF </h1>
+				</div>
+				
+				<div id="zegar"></div>
+			
+			</div>
+			
+		</header>
+		
+		<header>
+			<div id ="temat">
+					
+				<h3> Systemy operacyjne: OS/2 </h3>
+
+			</div>
+		</header>
+		
+		<div id="tresc">
+			 
+        		OS/2 to seria komputerowych systemów operacyjnych, początkowo stworzonych przez Microsoft i IBM pod kierownictwem projektanta oprogramowania IBM Eda Iacobucci. W wyniku sporu między dwiema firmami o to, jak pozycjonować OS/2 w stosunku do nowego środowiska operacyjnego Microsoft Windows 3.1, obie firmy zerwały współpracę w 1992 r. i rozwój OS/2 przejął wyłącznie IBM. Nazwa oznacza „Operating System/2”, ponieważ został wprowadzony jako część tej samej wersji zmiany generacji, co linia komputerów osobistych drugiej generacji „Personal System/2 (PS/2)” firmy IBM. Pierwsza wersja OS/2 została wydana w grudniu 1987 roku, a nowsze wersje były wydawane do grudnia 2001 roku.
+
+            OS/2 został pomyślany jako następca PC DOS w trybie chronionym. Warto zauważyć, że podstawowe wywołania systemowe były wzorowane na wywołaniach MS-DOS; ich nazwy zaczynały się nawet od „Dos” i możliwe było tworzenie aplikacji „Family Mode” – aplikacji w trybie tekstowym, które mogłyby działać na obu systemach. Ze względu na to dziedzictwo, OS/2 dzieli podobieństwa z Unixem, Xenixem i Windows NT.
+
+            IBM zaprzestał wsparcia dla OS/2 31 grudnia 2006 roku. Od tego czasu OS/2 był rozwijany, obsługiwany i sprzedawany przez dwóch różnych dostawców zewnętrznych na licencji IBM – najpierw przez Serenity Systems jako eComStation od 2001 roku, a później przez Arca Noae LLC jako ArcaOS od 2017 roku.
+
+			<br/><br/> <img src="2OS2.jpg
+">
+			
+		</div>
+		
+		<footer>
+			
+			<div id="footer">
+				Strona napisana przez Alana Abramowskiego, w razie błędów proszę o kontakt.
+			</div>
+			
+		</footer>
+		
+	</div>
+	
+</body>
+
+</html>

@@ -83,6 +83,30 @@
 			Menedżer zadań jest to program służący do zarządzania procesami danego systemu operacyjnego, monitorowania systemu analizy działania sieci, dysku i innych części składowych komputera. Zapewnia dostęp do informacji takich jak: wydajność komputera, uruchomione aplikacje i procesy (także te działające w tle), stan pamięci komputera. Monitoruje też aktywność sieciową systemu, związane z tym statystyki oraz podaje dane dotyczące kont użytkowników. Może też być użyty do ustawiania priorytetu zadań i aplikacji (choć do tego częściej używa się Harmonogramu zadań), pozwala też na „uśmiercenie” (zabicie), czyli zakończenie dowolnego procesu.
 			Można go uruchomić za pomocą skrótu klawiszowego Ctrl+Shift+Esc.<br/><br/>
 			5. Etapy uruchamiania systemu operacyjnego. <br/>
+			Etapy uruchamiania systemu operacyjnego Windows są następujące.
+			Po włączeniu zasilania komputera rozpoczyna się wewnętrzny test sprzętu „POST”. Podczas tej fazy
+			sprawdzana jest obecność najważniejszych systemów, następnie uruchamiana jest karta graficzna –
+			przeprowadzany jest jej test, i rozpoczyna się wyświetlanie danych na ekranie.
+			Kolejnym etapem jest testowanie procesora i pamięci, po których kontrolowane są napędy podłączone
+			do komputera i wyświetlany jest ekran zawierający podsumowanie informacji o przetestowanym
+			sprzęcie.
+			Po przeprowadzeniu testów „POST” , BIOS uruchamia program zapisany w głównym rekordzie
+			rozruchowym dysku „MBR” (Master Boot Record), w obszarze MBR zapisana jest instrukcja
+			uruchamiająca program NT Loader (plik ntldr znajdujący się na partycji uruchomieniowej systemu).
+			NT Loader przetwarza zapisy w pliku BOOT. ini.
+			Plik BOOT.ini zawiera informacje na temat sektora rozruchowego komputera. Każdy system
+			operacyjny zainstalowany na dysku tworzy własny sektor rozruchowy zapisany w pierwszym sektorze
+			partycji dysku. Jeśli w komputerze zainstalowany jest więcej niż jeden system operacyjny, to program
+			ładujący wyświetli menu wyboru systemów.
+			Następnie ładowany jest program NTDETECT.com, który odpowiada za sprawdzenie
+			zainstalowanego w systemie sprzętu. Informacje te przekazywane są do NT Loader , który
+			korzystając z nich uruchamia odpowiednie jądro systemu – plik ntoskrnl.exe (zapisany w katalogu
+			WINDOWS/system32) Po załadowaniu do pamięci jądro, przejmuje kontrolę nad dalszym
+			uruchamianiem systemu. Uruchamiany jest plik hal.dll, odpowiadający za odseparowanie warstwy
+			sprzętowej, następnie ładowane są sterowniki niskiego poziomu (znajdują się w
+			WINDOWS/system32/drivers) oraz pozostałe pliki stanowiące uzupełnienie funkcji jądra systemu
+			operacyjnego. Na końcu uruchamiany jest program służący do logowania użytkownika –
+			winlogon.exe. Podczas ładowania system korzysta z zapisów w plikach rejestru.<br/><br/>
 			6. Tryby uruchamiania systemu Windows. <br/>
 			7. Folder autostart. <br/>
 			

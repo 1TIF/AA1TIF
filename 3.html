@@ -73,19 +73,22 @@
 			Ma on całkowitą kontrolę nad systemem komputerowym. Jest pierwszym uruchamianym programem (zaraz po programie uruchamiającym). 
 			Odpowiada on za obsługę procesu uruchomienia, obsługę urządzeń wejścia/wyjścia, pracę z pamięcią i pamięcią masową, itd.
 			Jądro jest warstwą łączącą sprzęt z oprogramowaniem. Realizuje najczęściej wykonywane zadania w systemie operacyjnym, np. wykonanie zapisu pliku, odczyt danych z pamięci,
-			przetwarzanie danych otrzymanych z karty sieciowej itp. Jądro nowszych systemów Windows jest jądrem hybrydowym. <br/><br/>
+			przetwarzanie danych otrzymanych z karty sieciowej itp. Jądro nowszych systemów Windows jest jądrem hybrydowym. <br/>
+			<img scr="31.png"><br/><br/>
 			
 			2. Pamięć fizyczna, wirtualna, plik wymiany - konfiguracja. <br/>
 			Pamięć fizyczna komputera jest to inaczej pamięć RAM, która znajduje się w komputerze. Windows automatycznie wykrywa ją i konfiguruje system. RAM pomaga w pracy komputera. Przechowuje ona aktualnie używane programy i procesy.<br/>
 			Pamięć wirtualna jest to mechanizm zarządzania pamięcią komputera zapewniający procesowi wrażenie pracy w jednym, dużym, ciągłym obszarze pamięci operacyjnej, podczas gdy fizycznie może być ona pofragmentowana, nieciągła i częściowo przechowywana na urządzeniach pamięci masowej. Systemy korzystające z tej techniki ułatwiają tworzenie rozbudowanych aplikacji oraz poprawiają wykorzystanie fizycznej pamięci RAM w systemach wielozadaniowych.<br/>
-			Plik wymiany jest to specjalny plik systemowy wykorzystywany przez systemy operacyjne jako dodatkowa pamięć wspomagająca mechanizm stronicowania i pamięci wirtualnej[1]. Ten plik w systemach operacyjnych opartych na Windows NT nosi nazwę pagefile.sys i może być utworzony w głównym folderze każdego obsługiwanego przez system woluminu, czyli może być ich w systemie kilka. Można utworzyć go w sekcji wydajność w zakładce Zaawansowane, znajdującej się w Zaawansowanych ustawieniach systemu. <br/><br/>
+			Plik wymiany jest to specjalny plik systemowy wykorzystywany przez systemy operacyjne jako dodatkowa pamięć wspomagająca mechanizm stronicowania i pamięci wirtualnej[1]. Ten plik w systemach operacyjnych opartych na Windows NT nosi nazwę pagefile.sys i może być utworzony w głównym folderze każdego obsługiwanego przez system woluminu, czyli może być ich w systemie kilka. Można utworzyć go w sekcji wydajność w zakładce Zaawansowane, znajdującej się w Zaawansowanych ustawieniach systemu. <br/>
+			<img scr="32.jpg"><br/><br/>
 			
 			3. Wielozadaniowość. <br/>
 			Wielozadaniowość jest to cecha systemu operacyjnego umożliwiająca równoczesne wykonywanie więcej niż jednego procesu (programu). Zwykle za poprawną realizację wielozadaniowości odpowiedzialne jest jądro systemu operacyjnego. <br/> <br/>
 			
 			4. Menedżer zadań. <br/>
 			Menedżer zadań jest to program służący do zarządzania procesami danego systemu operacyjnego, monitorowania systemu analizy działania sieci, dysku i innych części składowych komputera. Zapewnia dostęp do informacji takich jak: wydajność komputera, uruchomione aplikacje i procesy (także te działające w tle), stan pamięci komputera. Monitoruje też aktywność sieciową systemu, związane z tym statystyki oraz podaje dane dotyczące kont użytkowników. Może też być użyty do ustawiania priorytetu zadań i aplikacji (choć do tego częściej używa się Harmonogramu zadań), pozwala też na „uśmiercenie” (zabicie), czyli zakończenie dowolnego procesu.
-			Można go uruchomić za pomocą skrótu klawiszowego Ctrl+Shift+Esc.<br/><br/>
+			Można go uruchomić za pomocą skrótu klawiszowego Ctrl+Shift+Esc.<br/>
+			<img scr="34.jpg"><br/><br/>
 			
 			5. Etapy uruchamiania systemu operacyjnego. <br/>
 			Etapy uruchamiania systemu operacyjnego Windows są następujące.
@@ -123,17 +126,19 @@
 			Tryb ostatnia znana dobra konfiguracja. Przywraca ostatnią konfigurację systemu, która została pomyślnie uruchomiona.<br/>
 			Tryb odzyskiwania. usług katalogowych Dotyczy tylko kontrolerów domen Windows 2000. Podczas uruchamiania powoduje wyświetlenie informacji o systemie, takich jak liczba procesorów, wielkość pamięci, status Service Pack oraz numer wersji.<br/>
 			Tryb debugowania. Powoduje uruchomienie systemu Windows 2000 w trybie debugowania jądra, w którym debuger ma dostęp do jądra w celu rozwiązania problemów lub analizy systemu.<br/>
-			Tryb normalnego rozruchu. Powoduje uruchomienie systemu Windows 2000 z załadowaniem wszystkich normalnych plików i wartości rejestrowych.<br/><br/>
+			Tryb normalnego rozruchu. Powoduje uruchomienie systemu Windows 2000 z załadowaniem wszystkich normalnych plików i wartości rejestrowych.<br/>
+			<img scr="36.png"><br/><br/>
 			
-			7. Folder autostart. <br/>
+			7. Folder autostart. <br/><br/>
 			Folder autostart jest folderem zawierającym aplikacje, które mają uruchamiać się automatycznie ze startem systemu. Jeśli chcemy aby przy starcie systemu uruchamiał się jakiś wybrany program, musimy o tym powiadomić system operacyjny.
 			W poprzednich wersjach systemu Windows wyglądało to bardzo prosto.
 			Wystarczyło aby w menu "Start" w katalogu autostart umieścić skrót do programu który ma się automatycznie uruchamiać.
 			W systemie Windows 10 , aby skonfigurować automatyczne uruchamianie programów, należy wykonać poniższe kroki:<br/>
-1. Wciskamy przycisk "Windows" z klawiszem "r".<br/>
-2. W polu tekstowym wpisujemy tekst shell:startup i klikamy przycisk "OK" lub wciskamy "ENTER".<br/>
-3. Zostaje otwarty folder ze ścieżka C:\Users\NAZWA_UZYTKOWNIKA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup lub otwieramy katalog %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.<br/>
-4. Do otwartego folderu kopiujemy link do programu który ma się automatycznie uruchamiać.<br/>
+			1. Wciskamy przycisk "Windows" z klawiszem "r".<br/>
+			2. W polu tekstowym wpisujemy tekst shell:startup i klikamy przycisk "OK" lub wciskamy "ENTER".<br/>
+			3. Zostaje otwarty folder ze ścieżką C:\Users\NAZWA_UZYTKOWNIKA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup<br/>
+			4. Do otwartego folderu kopiujemy link do programu który ma się automatycznie uruchamiać.<br/>
+			<img scr="37.png"><br/><br/>
 		</div>
 		
 		<footer>

@@ -114,9 +114,26 @@
 			winlogon.exe. Podczas ładowania system korzysta z zapisów w plikach rejestru.<br/><br/>
 			
 			6. Tryby uruchamiania systemu Windows. <br/>
+			System Windows posiada następujące tryby uruchamiania: <br/>
+			Tryb awaryjny. Powoduje załadowanie minimalnej ilości sterowników i usług systemowych potrzebnej do uruchomienia systemu. Programy określone w grupie Startup nie zostają uruchomione.<br/>
+			Tryb awaryjny z siecią. Podobny do standardowego trybu awaryjnego, ale obejmuje także usługi i sterowniki umożliwiające pracę w sieci. W tym trybie możliwe jest zastosowanie Zasad grup, w tym zasad realizowanych przez serwer podczas logowania oraz zasad skonfigurowanych na komputerze lokalnym.</br>
+			Tryb awaryjny z wierszem polecenia. Podobny do standardowego trybu awaryjnego, ale zamiast Explorer.exe jako powłoka użytkownika zostaje załadowany interpreter poleceń.<br/>
+			Tryb rejestracji rozruchu. Podczas normalnego procesu uruchamiania, w którym zapisywane są nazwy i status wszystkich załadowanych do pamięci sterowników, tworzy plik dziennika o nazwie Ntbtlog.txt w folderze %SystemRoot%.<br/>
+			Tryb VGA. W przypadku uszkodzenia lub niekompatybilności zainstalowanego sterownika wideo, powoduje uruchomienie komputera w podstawowym trybie VGA.<br/>
+			Tryb ostatnia znana dobra konfiguracja. Przywraca ostatnią konfigurację systemu, która została pomyślnie uruchomiona.<br/>
+			Tryb odzyskiwania. usług katalogowych Dotyczy tylko kontrolerów domen Windows 2000. Podczas uruchamiania powoduje wyświetlenie informacji o systemie, takich jak liczba procesorów, wielkość pamięci, status Service Pack oraz numer wersji.<br/>
+			Tryb debugowania. Powoduje uruchomienie systemu Windows 2000 w trybie debugowania jądra, w którym debuger ma dostęp do jądra w celu rozwiązania problemów lub analizy systemu.<br/>
+			Tryb normalnego rozruchu. Powoduje uruchomienie systemu Windows 2000 z załadowaniem wszystkich normalnych plików i wartości rejestrowych.<br/><br/>
 			
 			7. Folder autostart. <br/>
-			
+			Folder autostart jest folderem zawierającym aplikacje, które mają uruchamiać się automatycznie ze startem systemu. Jeśli chcemy aby przy starcie systemu uruchamiał się jakiś wybrany program, musimy o tym powiadomić system operacyjny.
+			W poprzednich wersjach systemu Windows wyglądało to bardzo prosto.
+			Wystarczyło aby w menu "Start" w katalogu autostart umieścić skrót do programu który ma się automatycznie uruchamiać.
+			W systemie Windows 10 , aby skonfigurować automatyczne uruchamianie programów, należy wykonać poniższe kroki:<br/>
+1. Wciskamy przycisk "Windows" z klawiszem "r".<br/>
+2. W polu tekstowym wpisujemy tekst shell:startup i klikamy przycisk "OK" lub wciskamy "ENTER".<br/>
+3. Zostaje otwarty folder ze ścieżka C:\Users\NAZWA_UZYTKOWNIKA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup lub otwieramy katalog %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.<br/>
+4. Do otwartego folderu kopiujemy link do programu który ma się automatycznie uruchamiać.<br/>
 		</div>
 		
 		<footer>

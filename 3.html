@@ -74,21 +74,24 @@
 			Odpowiada on za obsługę procesu uruchomienia, obsługę urządzeń wejścia/wyjścia, pracę z pamięcią i pamięcią masową, itd.
 			Jądro jest warstwą łączącą sprzęt z oprogramowaniem. Realizuje najczęściej wykonywane zadania w systemie operacyjnym, np. wykonanie zapisu pliku, odczyt danych z pamięci,
 			przetwarzanie danych otrzymanych z karty sieciowej itp. Jądro nowszych systemów Windows jest jądrem hybrydowym. <br/>
-			<img src="31.png"><br/><br/>
+			<br/><img src="31.png"><br/><br/>
 			
 			2. Pamięć fizyczna, wirtualna, plik wymiany - konfiguracja. <br/>
 			Pamięć fizyczna komputera jest to inaczej pamięć RAM, która znajduje się w komputerze. Windows automatycznie wykrywa ją i konfiguruje system. RAM pomaga w pracy komputera. Przechowuje ona aktualnie używane programy i procesy.<br/>
 			Pamięć wirtualna jest to mechanizm zarządzania pamięcią komputera zapewniający procesowi wrażenie pracy w jednym, dużym, ciągłym obszarze pamięci operacyjnej, podczas gdy fizycznie może być ona pofragmentowana, nieciągła i częściowo przechowywana na urządzeniach pamięci masowej. Systemy korzystające z tej techniki ułatwiają tworzenie rozbudowanych aplikacji oraz poprawiają wykorzystanie fizycznej pamięci RAM w systemach wielozadaniowych.<br/>
 			Plik wymiany jest to specjalny plik systemowy wykorzystywany przez systemy operacyjne jako dodatkowa pamięć wspomagająca mechanizm stronicowania i pamięci wirtualnej. Ten plik w systemach operacyjnych opartych na Windows NT nosi nazwę pagefile.sys i może być utworzony w głównym folderze każdego obsługiwanego przez system woluminu, czyli może być ich w systemie kilka. Można utworzyć go w sekcji wydajność w zakładce Zaawansowane, znajdującej się w Zaawansowanych ustawieniach systemu. <br/>
-			<img src="33.jpg"/><br/><br/>
+			<br/><img src="33.jpg"/><br/><br/>
 			
 			3. Wielozadaniowość. <br/>
 			Wielozadaniowość jest to cecha systemu operacyjnego umożliwiająca równoczesne wykonywanie więcej niż jednego procesu (programu). Zwykle za poprawną realizację wielozadaniowości odpowiedzialne jest jądro systemu operacyjnego. <br/> <br/>
+			Wielozadaniowość zapewniona jest między innymi przez planistę, czyli część systemu operacyjnego realizującą algorytm szeregowania zadań w kolejce do przyznania czasu przetwarzania na procesorze.
+			Równoczesność realizowania wielozadaniowości jest pozorna, gdy system komputerowy ma dostępnych mniej wątków sprzętowych niż procesów (programów) wykonywanych jednocześnie. Wówczas dla uzyskania wrażenia wykonywania wielu zadań w tym samym czasie, konieczne staje się zastosowanie mechanizmu podziału czasu, którego działanie polega na przydzielaniu każdemu procesowi określonego przedziału czasowego, w którym może być on przetwarzany przez wątek sprzętowy (procesor).
+			Systemy wielozadaniowe można podzielić na oferujące i nie oferujące wywłaszczanie. W systemach z wywłaszczaniem może nastąpić przerwanie wykonywania procesu, czyli niejako „odebranie” mu procesora, i przekazanie sterowania do planisty. Pełne wywłaszczanie zapewniają tylko mechanizmy sprzętowe działające niezależnie od oprogramowania (np. dołączanie wywłaszczania do procedury obsługi przerwania zegarowego). W systemach bez wywłaszczania procesy powinny same dbać o sprawiedliwy podział czasu, co często uzyskuje się pośrednio – proces dokonując wywołania systemowego oddaje sterowanie procesowi jądra lub jednemu z procesów systemowych i w ten sposób „zrzeka” się procesora. Program niewykonywany pozostaje „w uśpieniu” do momentu, gdy znów zostanie mu przydzielony czas procesora.
 			
 			4. Menedżer zadań. <br/>
 			Menedżer zadań jest to program służący do zarządzania procesami danego systemu operacyjnego, monitorowania systemu analizy działania sieci, dysku i innych części składowych komputera. Zapewnia dostęp do informacji takich jak: wydajność komputera, uruchomione aplikacje i procesy (także te działające w tle), stan pamięci komputera. Monitoruje też aktywność sieciową systemu, związane z tym statystyki oraz podaje dane dotyczące kont użytkowników. Może też być użyty do ustawiania priorytetu zadań i aplikacji (choć do tego częściej używa się Harmonogramu zadań), pozwala też na „uśmiercenie” (zabicie), czyli zakończenie dowolnego procesu.
 			Można go uruchomić za pomocą skrótu klawiszowego Ctrl+Shift+Esc.<br/>
-			<img src="34.jpg"/><br/><br/>
+			<br/><img src="34.jpg"/><br/><br/>
 			
 			5. Etapy uruchamiania systemu operacyjnego. <br/>
 			Etapy uruchamiania systemu operacyjnego Windows są następujące.
@@ -127,7 +130,7 @@
 			Tryb odzyskiwania. usług katalogowych Dotyczy tylko kontrolerów domen Windows 2000. Podczas uruchamiania powoduje wyświetlenie informacji o systemie, takich jak liczba procesorów, wielkość pamięci, status Service Pack oraz numer wersji.<br/>
 			Tryb debugowania. Powoduje uruchomienie systemu Windows 2000 w trybie debugowania jądra, w którym debuger ma dostęp do jądra w celu rozwiązania problemów lub analizy systemu.<br/>
 			Tryb normalnego rozruchu. Powoduje uruchomienie systemu Windows 2000 z załadowaniem wszystkich normalnych plików i wartości rejestrowych.<br/>
-			<img src="36.png"/><br/><br/>
+			<br/><img src="36.png"/><br/><br/>
 			
 			7. Folder autostart. <br/><br/>
 			Folder autostart jest folderem zawierającym aplikacje, które mają uruchamiać się automatycznie ze startem systemu. Jeśli chcemy aby przy starcie systemu uruchamiał się jakiś wybrany program, musimy o tym powiadomić system operacyjny.
@@ -138,7 +141,7 @@
 			2. W polu tekstowym wpisujemy tekst shell:startup i klikamy przycisk "OK" lub wciskamy "ENTER".<br/>
 			3. Zostaje otwarty folder ze ścieżką C:\Users\NAZWA_UZYTKOWNIKA\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup<br/>
 			4. Do otwartego folderu kopiujemy link do programu który ma się automatycznie uruchamiać.<br/>
-			<img src="37.png"/><br/><br/>
+			<br/><img src="37.png"/><br/><br/>
 		</div>
 		
 		<footer>

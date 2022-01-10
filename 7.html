@@ -66,7 +66,79 @@
 		
 		<div id="tresc">
 		
-			
+			Wiersz poleceń systemu Linux to tekstowy interfejs poleceń. Często nazywany powłoką, terminalem, konsolą lub różnymi innymi nazwami. 
+			Powłoka pozwala na komunikowanie się z systemem operacyjnym za pomocą tekstu. Pozwala na uruchamianie innych programów. Linuxowe polecenia to: <br/>
+			man nazwa_komendy – info o danym poleceniu<br/>
+			1. cd nazwa_katalogu – wejście do katalogu<br/>
+			2. cd .. – wyjście z katalogu<br/>
+			3. mkdir nazwa_katalogu – tworzy katalog<br/>
+			4. rmdir nazwa_katalogu – usuwa katalog<br/>
+			5. rm nazwa_pliku – usuwa plik<br/>
+			6. rm * – usuwa wszystkie pliki z danego katalogu<br/>
+			7. rm * -i – usuwa wszystkie pliki z danego katalogu z potwierdzeniem<br/>
+			8. rm * -f – usuwa wszystkie pliki z danego katalogu i wyłącza potwierdzenia (nawet zabezpieczone przed usunięciem)<br/>
+			9. rm -f – usunięcie plików zabezpieczonych przed kopiowaniem<br/>
+			10. rm -r – usunięcie plików również w podkatalogach<br/>
+			11. rm -rf – usuwa cały system plików<br/>
+			12. chmod u+r jeden.doc – mogę czytać dany plik<br/>
+			13. w – mogę zapisywać i edytować dany plik<br/>
+			14. x – mogę wykonywać dany plik<br/>
+			15. ls -a – pokazuje ukryte pliki<br/>
+			16. ls -l – pokazuje więcej info o pliku<br/>
+			17. ls > wynik – wysłanie spisu zawartości katalogu do pliku wynik jeżeli taki plik istnieje to skasuje się jego poprzednia zawartość<br/>
+			18. cat jeden.doc > wszystkie.doc – nadpisanie zawartości w pliku wszystkie.doc zawartościami innych plików<br/>
+			19. cat jeden.doc dwa.doc >> wszystkie.doc – dopisanie do pliku wszystkie.doc zawartości innych plików<br/>
+			20. cat nazwa_pliku – czytanie zawartości pliku<br/>
+			21. cat *.doc – znajdzie np.: dwa.doc sratytaty.doc
+			22. cat jeden.doc dwa.doc > wszystkie.doc – wrzuca zawartość plików do jednego<br/>
+			23. cat < jeden.doc > dwa.doc – wypisze zawartość jeden.doc na ekran (standartowe wyjście) i nadpisze zawartość pliku jeden.doc do pliku dwa.doc<br/>
+			24. cat parowka.doc | more – wyjście programu cat (parowka.doc) jest przekazywane na wyjście programu more<br/>
+			25. head -42 nazwa_pliku – wyświetla 42 pierwszych wierszy zawartych w pliku<br/>
+			26. tail -42 nazwa_pliku – wyświetla 42 końcowych wierszy zawartych w pliku (przydaje się w obserwowaniu świeżo dopisanych logów do pliku)<br/>
+			27. cp plik_zrodlowy plik_docelowy – kopiuje zawartość z pliku do pliku<br/>
+			28. cp plik(i)_zrodlowy katalog(i)_docelowy – kopiuje pliki do katalogu<br/>
+			29. mv stara_nazwa nowa_nazwa – zmiana nazwy pliku<br/>
+			30. mv nazwa_pliku nazwa_katalogu – przenoszenie pliku do katalogu<br/>
+			31. lp nazwa_pliku – drukowanie pliku<br/>
+			32. lpr nazwa_pliku – wstawienie pliku do koleiki drukowania<br/>
+			33. pwd – pokazuje w jakim jesteś katalogu<br/>
+			34. . – oznacza katalog bieżący<br/>
+			35. .. – oznacza katalog nadrzędny<br/>
+			36. touch nazwa_pliku – tworzy pusty plik<br/>
+			37. stty -a – wypisanie skrótów do np. zatrzymania procesu<br/>
+			38. mail – otwiera plik z poczta<br/>
+			39. printenv albo export (powłoka C) – zobaczenie zawartości zmiennych środowiska<br/>
+			40. nazwa=zawartość – pierwsze przypisze zmiennej powłoki odpowiednia zawartość<br/>
+			41. export nazwa drugie utworzy zmienna o tej samej nazwie i zawartości co zmienna powłoki<br/>
+			42. MOJA_ZMIENNA=”jakas_wartosc” – tworzy zmienna środowiska z wartością „jakas_wartosc”<br/>
+			43. echo $MOJA_ZMIENNA wypisuje zawartość MOJA_ZMIENNA (znakiem dolara poprzedzamy nazwy zmiennych środ. które to nazwy powłoka ma zastąpić zawartością odpowiedniej zmiennej<br/>
+			44. find ścieżka/nazwa_pliku lub kryterium – wyszukiwanie plików<br/>
+			45. grep – służy do wyszukiwania plików według zadanego wzorca<br/>
+			46. write nazwa_uzytkownika – wysyłanie wiadomości do określonego użytkownika, tekst pojawia się od razu po wpisaniu, teksty obu użytkowników mogą się mieszać<br/>
+			47. mesg n – zablokowanie przychodzących wiadomości write<br/>
+			48. mesg y – odblokowanie przychodzących wiadomości write<br/>
+			49. talk nazwa_uzytkowika – następny program tutaj ekran dzieli się na dwie części a rozmowa się nawiązuje jeśli drugi rozmówca odpowie „talk twoja_nazwa_uzytkownika”<br/>
+			50. conrol-c – zakańcza program talk<br/>
+			51. i nazwa_pliku – otwiera edytor z plikiem do edycji<br/>
+			52. vi – uruchamia edytor potem:<br/>
+			53. : – wierszowy tryb pracy (wiersz staje się poleceniem po naciśnięciu return)<br/>
+			54. i – drugi tryb pracy gdzie znaki są wstawiane do bufora aż do naciśnięcia klawisza esc<br/>
+			55. 10x – usunie 10 znaków pod kursorem<br/>
+			56. 10X – usunie 10 znaków na lewo od kursora<br/>
+			57. :w – zachowanie pliku na dysku<br/>
+			58. :q – opuszczenie programu<br/>
+			59. :wq lub ZZ – zapisuje plik i opuszcza program<br/>
+			60. :q! – wyjście bez zapisania pliku<br/>
+			61. 10dd – wycina do schowka 10 wierszy od kursora w dół<br/>
+			62 10yy – kopiuje do schowka 10 wierszy od kursora w dół<br/>
+			63. p – wklejenie zawartości schowka na lewo od kursora<br/>
+			64. P – wklejenie zawartości schowka na prawo od kursora<br/>
+			65. :r nazwa_pliku – wczytanie do bufora innego pliku<br/>
+			66. :set number – numerowanie wierszy<br/>
+			67. :set no number – nie ponumerowane wiersze<br/>
+			68. u – cofnięcie skutków ostatniego polecenia<br/>
+			69. ps – wypisuje stan procesów <br/>
+
 			
 		</div>
 		

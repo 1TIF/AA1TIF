@@ -73,7 +73,25 @@ Adresy IPv4 są 32-bitowymi liczbami całkowitymi. Adres IPv4 w formie dziesięt
 11010000 01010000 10011000 00000010.</br></br>
 Adresy IPv6 są 128-bitowymi liczbami całkowitymi, dlatego przykładowy adres sieci IPv6 w zapisie szesnastkowym, zgodnym ze specyfikacją Media:CIDR, która dotyczy również IPv4 (RFC1518, RFC1519, RFC1812), wygląda następująco:</br>
 3ffe:0902:0012:0000:0000:0000:0000:0000/48,
-gdzie /48 oznacza długość pierwszego prefiksu wyrażoną w bitach (człony adresu grupuje się po 16 bitów i oddziela dwukropkiem).</br>
+gdzie /48 oznacza długość pierwszego prefiksu wyrażoną w bitach (człony adresu grupuje się po 16 bitów i oddziela dwukropkiem).</br></br>
+Maska sieci określa proporcje między częściami sieciową i komputerową oraz rozmiar części sieciowej w adresie komputera który jest równy liczbie jedynek w masce.</br>
+Służy także do wyodrębnienia adresu IP sieci z adresu IP komputera, „maskuje” (czyli zasłania, ignoruje) wartość części komputerowej adresu. Jest ona zawsze obecna, razem z adresem IP. Jej budowa i notacja jest taka sama, jak dla adresu IP (32 bity, notacja dziesiętna).
+Maska ma charakterystyczną strukturę (zawartość) – tworzą ją dwa bloki: blok jedynek i blok zer: 111111....000000.</br></br>
+Klasy adresów IP - Projektanci protokołu IPv4 wyróżnili 5 klas, o różnych znaczeniach dla adresów IP.</br>
+Klasa A –
+dla sieci bardzo dużych rozmiarów
+najstarszy bit adresu ma wartość 0, maska min. /8</br>
+Klasa B –
+dla sieci średnich rozmiarów
+dwa najstarsze bity: 10, maska min. /16</br>
+Klasa C –
+dla sieci małych rozmiarów
+trzy najstarsze bity: 110, maska min. /24</br>
+Klasa D –
+dla adresów rozsyłania grupowego (ang. multicast)
+cztery najstarsze bity: 1110</br>
+Klasa E –
+adresy eksperymentalne, nie używane</br>
 		</div>
 		
 		<footer>
